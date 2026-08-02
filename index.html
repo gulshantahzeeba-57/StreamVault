@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreamVault | Licensed 4K Streaming Bundle — Live TV, Sport & Film</title>
+  <meta name="description"
+    content="One licensed subscription for live UK TV, official Premier League coverage, and a full film & series library in 4K. Fully rights-cleared streaming, no grey-market boxes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="https://i.postimg.cc/qBGTPp8s/Untitled-removebg-preview-(1).png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-nav">
+    <div class="wrap nav-row">
+      <a href="index.html" class="logo"><span class="logo-mark"></span>StreamVault</a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faqs">FAQs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#pricing" class="btn btn-primary">Start free trial</a>
+        <button class="nav-burger" onclick="toggleMobileNav()" aria-label="Menu"><i
+            class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="nav-mobile-panel" id="mobile-nav">
+        <a href="#pricing" class="btn btn-primary btn-block" style="margin-bottom:10px;"
+          onclick="toggleMobileNav()">Start free trial</a>
+        <a href="#features" onclick="toggleMobileNav()">Features</a>
+        <a href="#pricing" onclick="toggleMobileNav()">Pricing</a>
+        <a href="#faqs" onclick="toggleMobileNav()">FAQs</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="section" style="border-bottom:1px solid var(--line); padding-top:88px;">
+    <div class="hero-grid wrap">
+      <div>
+        <span class="eyebrow">Officially licensed streaming</span>
+        <h1 style="font-size:clamp(34px,4.6vw,54px); margin-top:18px;">
+          Every channel here has paid its way onto your screen.
+        </h1>
+        <p style="color:var(--fg-dim); font-size:18px; margin-top:20px; max-width:520px;">
+          StreamVault bundles fully licensed live UK TV, official sport coverage, and a 4K film &amp; series library
+          into one subscription — rights-cleared, contract-free, and built to actually work on the device you already
+          own.
+        </p>
+        <div style="display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;">
+          <a href="#pricing" class="btn btn-primary">View plans</a>
+          <a href="#features" class="btn btn-ghost">See what's included</a>
+        </div>
+        <div style="display:flex; gap:22px; margin-top:36px; flex-wrap:wrap;">
+          <span class="pill"><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Fully licensed content</span>
+          <span class="pill"><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Cancel anytime</span>
+          <span class="pill"><i class="fa-solid fa-check" style="color:var(--cyan);"></i> No hardware required</span>
+        </div>
+      </div>
+      <div
+        style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-lg); padding:26px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+          <span class="eyebrow">Now streaming</span>
+          <span style="font-family:var(--font-mono); font-size:12px; color:var(--fg-mute);">1080p–4K HDR</span>
+        </div>
+        <div
+          style="background:linear-gradient(135deg, var(--ink-800), var(--ink-700)); border-radius:var(--radius-md); aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; border:1px solid var(--line);">
+          <span style="font-family:var(--font-display); color:var(--fg-mute); font-size:14px;">Live match preview</span>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:20px;">
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:22px;">1,200+</div>
+            <div style="color:var(--fg-mute); font-size:12.5px;">Licensed channels</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:22px;">18,000+</div>
+            <div style="color:var(--fg-mute); font-size:12.5px;">Films &amp; series</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:22px;">99.9%</div>
+            <div style="color:var(--fg-mute); font-size:12.5px;">Uptime</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAR -->
+  <section class="section" style="padding:56px 0;">
+    <div class="wrap">
+      <div class="stat-bar">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-tv"></i></div>
+          <div class="stat-value">1,200+</div>
+          <div class="stat-label">Licensed channels</div>
+          <div class="stat-sub">UK &amp; select international</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-clapperboard"></i></div>
+          <div class="stat-value">18,000+</div>
+          <div class="stat-label">Films &amp; series</div>
+          <div class="stat-sub">Refreshed monthly</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="stat-value">99.9%</div>
+          <div class="stat-label">Stream uptime</div>
+          <div class="stat-sub">Adaptive delivery</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="stat-value">4.7 / 5</div>
+          <div class="stat-label">Customer rating</div>
+          <div class="stat-sub">From verified subscribers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFRA STATUS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:28px;">
+        <span class="eyebrow">Live infrastructure status</span>
+        <h2 style="font-size:clamp(24px,3vw,32px);">Our delivery network</h2>
+        <p>We publish real-time delivery stats so you always know what you're paying for.</p>
+      </div>
+      <div class="infra-summary">
+        <div class="stat-item" style="border:none; padding:0;">
+          <div style="color:var(--fg-mute); font-size:12px; font-family:var(--font-mono); text-transform:uppercase;">
+            Overall uptime</div>
+          <div class="stat-value" style="color:var(--cyan);">99.97%</div>
+        </div>
+        <div class="stat-item" style="border:none; padding:0;">
+          <div style="color:var(--fg-mute); font-size:12px; font-family:var(--font-mono); text-transform:uppercase;">
+            Network load</div>
+          <div class="stat-value">31% (Normal)</div>
+        </div>
+        <div class="stat-item" style="border:none; padding:0;">
+          <div style="color:var(--fg-mute); font-size:12px; font-family:var(--font-mono); text-transform:uppercase;">
+            Adaptive delivery</div>
+          <div class="stat-value" style="color:#4ADE80;">Active</div>
+        </div>
+      </div>
+      <div class="node-grid">
+        <div class="node-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:12.5px; color:var(--fg-mute);">London, UK</div>
+            <span class="node-status">Online</span>
+          </div>
+          <h4 style="font-size:15px; margin-top:6px;">London Node</h4>
+          <div class="node-metric"><span>Latency</span><b>14ms</b></div>
+          <div class="node-metric"><span>Load</span><b>32%</b></div>
+          <div class="node-metric"><span>Uptime</span><b>99.98%</b></div>
+        </div>
+        <div class="node-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:12.5px; color:var(--fg-mute);">Manchester, UK</div>
+            <span class="node-status">Online</span>
+          </div>
+          <h4 style="font-size:15px; margin-top:6px;">Manchester Node</h4>
+          <div class="node-metric"><span>Latency</span><b>18ms</b></div>
+          <div class="node-metric"><span>Load</span><b>34%</b></div>
+          <div class="node-metric"><span>Uptime</span><b>100%</b></div>
+        </div>
+        <div class="node-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:12.5px; color:var(--fg-mute);">Belfast, UK</div>
+            <span class="node-status">Online</span>
+          </div>
+          <h4 style="font-size:15px; margin-top:6px;">Belfast Node</h4>
+          <div class="node-metric"><span>Latency</span><b>22ms</b></div>
+          <div class="node-metric"><span>Load</span><b>39%</b></div>
+          <div class="node-metric"><span>Uptime</span><b>99.95%</b></div>
+        </div>
+        <div class="node-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:12.5px; color:var(--fg-mute);">Glasgow, UK</div>
+            <span class="node-status">Online</span>
+          </div>
+          <h4 style="font-size:15px; margin-top:6px;">Glasgow Node</h4>
+          <div class="node-metric"><span>Latency</span><b>21ms</b></div>
+          <div class="node-metric"><span>Load</span><b>41%</b></div>
+          <div class="node-metric"><span>Uptime</span><b>99.96%</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why StreamVault</span>
+        <h2>Built on real licences, not a workaround.</h2>
+        <p>Every feature below exists because we've paid for the rights to it — that's what keeps the picture stable and
+          the service legal to sell.</p>
+      </div>
+      <div class="grid-3">
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <h3 style="font-size:18px; margin-bottom:10px;">Rights-cleared sport</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Premier League, EFL and major boxing/PPV events through our
+            official broadcast partnerships — not re-streamed feeds.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <h3 style="font-size:18px; margin-bottom:10px;">Adaptive 4K delivery</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Our CDN scales stream quality to your connection
+            automatically, so you get the clearest picture your line can hold.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <h3 style="font-size:18px; margin-bottom:10px;">Any screen, one login</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Firestick, Smart TV, phone or desktop — install the app and
+            sign in, no third-party boxes or sideloading needed.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <h3 style="font-size:18px; margin-bottom:10px;">Real customer support</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">A UK-based support team you can actually reach, with a
+            published complaints process and no anonymous WhatsApp-only contact.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <h3 style="font-size:18px; margin-bottom:10px;">Transparent billing</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Clear monthly pricing, a visible cancellation button in your
+            account — no hidden renewal traps.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <h3 style="font-size:18px; margin-bottom:10px;">Family-safe profiles</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Separate profiles with age-rating controls, because a legal
+            service can offer parental tools that actually get maintained.</p>
+        </div>
+      </div>
+
+      <!-- extra feature strip -->
+      <div class="grid-3" style="margin-top:24px;">
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <div
+            style="width:40px; height:40px; border-radius:10px; background:var(--ink-800); display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+            <i class="fa-solid fa-laptop"></i></div>
+          <h3 style="font-size:17px; margin-bottom:8px;">Compatible with all devices</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Firestick, Samsung/LG Smart TV, Apple TV, Android box, or
+            iOS — setup takes under five minutes through our official app.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <div
+            style="width:40px; height:40px; border-radius:10px; background:var(--ink-800); display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+            <i class="fa-solid fa-headset"></i></div>
+          <h3 style="font-size:17px; margin-bottom:8px;">24/7 UK support</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Our support team is based in the UK and reachable by live
+            chat or email, day and night, for setup and account help.</p>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-md); padding:26px;">
+          <div
+            style="width:40px; height:40px; border-radius:10px; background:var(--ink-800); display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
+            <i class="fa-solid fa-bolt"></i></div>
+          <h3 style="font-size:17px; margin-bottom:8px;">Instant activation</h3>
+          <p style="color:var(--fg-dim); font-size:14.5px;">Checkout triggers automatic account setup — your login
+            details land in your inbox within minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" style="margin: 0 auto 40px; text-align:center;">
+        <span class="eyebrow">Smart saving comparison</span>
+        <h2>Why pay more for cable?</h2>
+        <p style="margin:14px auto 0;">See how a StreamVault subscription compares to a typical traditional pay-TV
+          package in the UK.</p>
+      </div>
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>StreamVault</th>
+              <th>Standard cable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monthly cost</td>
+              <td class="good">From £7.49/mo</td>
+              <td class="bad">£70.00+ / month</td>
+            </tr>
+            <tr>
+              <td>Contract</td>
+              <td class="good">No contract, cancel anytime</td>
+              <td class="bad">18-month minimum term</td>
+            </tr>
+            <tr>
+              <td>Setup fees</td>
+              <td class="good">£0, instant activation</td>
+              <td class="bad">Engineer visit required</td>
+            </tr>
+            <tr>
+              <td>Channels included</td>
+              <td class="good">1,200+ licensed channels</td>
+              <td class="bad">150+ (regional only)</td>
+            </tr>
+            <tr>
+              <td>Film &amp; series library</td>
+              <td class="good">18,000+ included</td>
+              <td class="bad">Paid add-ons</td>
+            </tr>
+            <tr>
+              <td>Multi-device support</td>
+              <td class="good">Firestick, Smart TV, phone, PC</td>
+              <td class="bad">Extra cost per room</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVICE MARQUEE -->
+  <section class="section" style="padding:56px 0;">
+    <div class="wrap">
+      <p
+        style="text-align:center; font-family:var(--font-mono); font-size:12.5px; letter-spacing:0.08em; color:var(--fg-mute); text-transform:uppercase; margin-bottom:22px;">
+        Supported streaming apps &amp; devices</p>
+    </div>
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marquee-track">
+        <!-- filled twice by JS for seamless loop -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Plans</span>
+        <h2>Simple pricing, no contract traps.</h2>
+        <p>Every tier includes the full licensed channel bundle and film library. Cancel from your account at any time.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-lg); padding:30px;">
+          <div class="eyebrow" style="color:var(--fg-mute);">Monthly</div>
+          <div style="font-family:var(--font-display); font-size:34px; margin-top:12px;">£12.99<span
+              style="font-size:14px; color:var(--fg-mute); font-weight:400;"> /mo</span></div>
+          <ul
+            style="margin-top:20px; display:flex; flex-direction:column; gap:10px; color:var(--fg-dim); font-size:14.5px;">
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Full licensed channel bundle</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> 18,000+ films &amp; series</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> 1 device at a time</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Cancel anytime</li>
+          </ul>
+          <button class="btn btn-ghost btn-block" style="margin-top:26px;"
+            onclick="openPlanModal('Monthly', '£12.99/mo')">Choose monthly</button>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--cyan); border-radius:var(--radius-lg); padding:30px; position:relative;">
+          <span
+            style="position:absolute; top:-12px; right:24px; background:var(--cyan); color:#04231F; font-size:12px; font-weight:700; padding:4px 12px; border-radius:100px;">Best
+            value</span>
+          <div class="eyebrow">Annual</div>
+          <div style="font-family:var(--font-display); font-size:34px; margin-top:12px;">£7.49<span
+              style="font-size:14px; color:var(--fg-mute); font-weight:400;"> /mo</span></div>
+          <ul
+            style="margin-top:20px; display:flex; flex-direction:column; gap:10px; color:var(--fg-dim); font-size:14.5px;">
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Full licensed channel bundle</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> 18,000+ films &amp; series</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> 2 devices at once</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Cancel anytime</li>
+          </ul>
+          <button class="btn btn-primary btn-block" style="margin-top:26px;"
+            onclick="openPlanModal('Annual', '£7.49/mo')">Choose annual</button>
+        </div>
+        <div
+          style="background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius-lg); padding:30px;">
+          <div class="eyebrow" style="color:var(--fg-mute);">Family</div>
+          <div style="font-family:var(--font-display); font-size:34px; margin-top:12px;">£16.99<span
+              style="font-size:14px; color:var(--fg-mute); font-weight:400;"> /mo</span></div>
+          <ul
+            style="margin-top:20px; display:flex; flex-direction:column; gap:10px; color:var(--fg-dim); font-size:14.5px;">
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Full licensed channel bundle</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> 18,000+ films &amp; series</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> 4 devices, 4 profiles</li>
+            <li><i class="fa-solid fa-check" style="color:var(--cyan);"></i> Cancel anytime</li>
+          </ul>
+          <button class="btn btn-ghost btn-block" style="margin-top:26px;"
+            onclick="openPlanModal('Family', '£16.99/mo')">Choose family</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan order modal -->
+  <div class="modal-backdrop" id="plan-modal" onclick="if(event.target===this) closePlanModal()">
+    <div class="modal-box" style="max-width:440px;">
+      <button class="modal-close" onclick="closePlanModal()"><i class="fa-solid fa-xmark"></i></button>
+      <span class="eyebrow" id="plan-modal-eyebrow">Plan</span>
+      <h2 id="plan-modal-title" style="font-size:22px; margin-top:10px;">Complete your order</h2>
+      <p style="color:var(--fg-dim); font-size:14px; margin-top:8px;">We'll email you to complete payment and activate
+        your subscription — no card details are collected here.</p>
+      <form id="plan-form" style="margin-top:20px;" onsubmit="return submitPlanOrder(event)">
+        <label
+          style="display:block; font-size:13px; color:var(--fg-mute); margin-bottom:6px; font-family:var(--font-mono);"
+          for="p-name">Full name</label>
+        <input id="p-name" type="text" required
+          style="width:100%; background:var(--ink-800); border:1px solid var(--line-strong); color:var(--fg); padding:11px 13px; border-radius:8px; font-size:14.5px; margin-bottom:16px;"
+          placeholder="Jane Smith">
+        <label
+          style="display:block; font-size:13px; color:var(--fg-mute); margin-bottom:6px; font-family:var(--font-mono);"
+          for="p-email">Email</label>
+        <input id="p-email" type="email" required
+          style="width:100%; background:var(--ink-800); border:1px solid var(--line-strong); color:var(--fg); padding:11px 13px; border-radius:8px; font-size:14.5px; margin-bottom:8px;"
+          placeholder="jane@email.com">
+        <p id="p-email-error" style="display:none; color:var(--coral); font-size:12.5px; margin-bottom:12px;"></p>
+        <button type="submit" id="plan-submit-btn" class="btn btn-primary btn-block">Request this plan</button>
+        <p id="plan-success"
+          style="display:none; color:var(--cyan); font-size:13px; margin-top:12px; text-align:center;">Order request
+          sent — we'll follow up by email.</p>
+        <button type="button" id="pay-now-btn" class="btn btn-ghost btn-block" style="display:none; margin-top:10px;"
+          onclick="showPaymentPlaceholder()"><i class="fa-solid fa-credit-card"></i> Pay now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Payment placeholder — shown after "Pay now" is clicked -->
+  <div class="modal-backdrop" id="payment-modal" onclick="if(event.target===this) closePaymentModal()">
+    <div class="modal-box" style="max-width:400px; text-align:center;">
+      <button class="modal-close" onclick="closePaymentModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div
+        style="width:52px; height:52px; border-radius:50%; background:var(--cyan-dim); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-size:22px; color:var(--cyan);">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <h3 style="font-size:19px;">Secure payment coming soon</h3>
+      <p style="color:var(--fg-dim); font-size:14px; margin-top:10px;">This is a placeholder — no real payment is
+        processed here. A live version of this button would redirect to a real payment provider (e.g. Stripe or PayPal)
+        to securely take card details.</p>
+      <button class="btn btn-ghost btn-block" style="margin-top:20px;" onclick="closePaymentModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="section" id="faqs">
+    <div class="wrap container-narrow">
+      <div class="section-head" style="max-width:100%;">
+        <span class="eyebrow">Common questions</span>
+        <h2>FAQs</h2>
+      </div>
+      <div id="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is this actually a licensed service?<span
+              class="chev">+</span></button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes — every channel and film in the bundle is delivered under direct licensing
+              agreements with rights holders and broadcasters.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What devices are supported?<span
+              class="chev">+</span></button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Firestick, Android TV, Samsung/LG Smart TVs, iOS, Android and desktop browsers, via
+              our official app.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can I cancel anytime?<span class="chev">+</span></button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes, cancellation is a single button in your account — no phone call or retention
+              script required.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How long does activation take after payment?<span
+              class="chev">+</span></button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Activation is automated. Your login details are sent to your email within minutes
+              of checkout completing.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can I use one subscription on multiple devices?<span
+              class="chev">+</span></button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Standard plans allow one active device at a time. Our Annual and Family tiers
+              support 2 and 4 simultaneous devices respectively.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What internet speed do I need?<span
+              class="chev">+</span></button>
+          <div class="faq-a">
+            <div class="faq-a-inner">8 Mbps is enough for SD, 15 Mbps for HD, and we recommend 25 Mbps or higher for
+              stable 4K streaming.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-mark"></span>StreamVault</a>
+          <p style="margin-top:14px;">A fully licensed streaming subscription — live TV, sport and film, delivered
+            legally.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 StreamVault. All rights reserved.</span>
+        <span>Placeholder brand — swap in your client's real name &amp; licensing details.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-data.js"></script>
+  <script>
+    // Mobile hamburger menu toggle
+    function toggleMobileNav() {
+      document.getElementById('mobile-nav').classList.toggle('open');
+    }
+
+    // FAQ accordion: click a question to expand/collapse its answer.
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(function (el) {
+        if (el !== item) {
+          el.classList.remove('open');
+          el.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+
+      if (isOpen) {
+        item.classList.remove('open');
+        answer.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    }
+
+    // Device marquee: generic list, duplicated once for a seamless right-to-left loop.
+    (function () {
+      const devices = [
+        ['fa-solid fa-tv', 'Amazon Fire TV', 'Firestick / Fire Cube'],
+        ['fa-solid fa-mobile-screen', 'Samsung Smart TV', 'Tizen OS apps'],
+        ['fa-solid fa-mobile-screen', 'LG Smart TV', 'webOS apps'],
+        ['fa-solid fa-tv', 'Apple TV', 'tvOS app'],
+        ['fa-solid fa-tv', 'Android TV', 'Chromecast'],
+        ['fa-solid fa-box', 'MAG Box', 'Ministra / Portal'],
+        ['fa-solid fa-mobile-screen', 'iOS devices', 'iPhone & iPad'],
+        ['fa-solid fa-mobile-screen', 'Android mobile', 'Phone & tablet'],
+        ['fa-solid fa-laptop', 'Windows PC', 'Desktop app'],
+        ['fa-solid fa-laptop', 'macOS desktop', 'Desktop app']
+      ];
+      const track = document.getElementById('marquee-track');
+      function renderSet() {
+        return devices.map(function (d) {
+          return '<div class="device-chip"><i class="' + d[0] + '"></i><div><div class="device-name">' + d[1] + '</div><div class="device-sub">' + d[2] + '</div></div></div>';
+        }).join('');
+      }
+      track.innerHTML = renderSet() + renderSet();
+    })();
+
+    // Plan order modal — captures the lead so it shows up in admin.html
+    // under "Plan orders". No payment is collected here; that needs a
+    // real processor (Stripe, etc.) wired up before this goes live.
+    let selectedPlan = null;
+
+    function openPlanModal(planName, planPrice) {
+      selectedPlan = {plan: planName, price: planPrice};
+      document.getElementById('plan-modal-eyebrow').textContent = planName + ' plan';
+      document.getElementById('plan-modal-title').textContent = 'Request the ' + planName + ' plan — ' + planPrice;
+      document.getElementById('plan-success').style.display = 'none';
+      document.getElementById('pay-now-btn').style.display = 'none';
+      document.getElementById('p-email-error').style.display = 'none';
+      document.getElementById('plan-form').reset();
+      document.getElementById('plan-modal').classList.add('open');
+    }
+
+    function closePlanModal() {
+      document.getElementById('plan-modal').classList.remove('open');
+    }
+
+    function submitPlanOrder(e) {
+      e.preventDefault();
+      const email = document.getElementById('p-email').value.trim();
+      const errorEl = document.getElementById('p-email-error');
+      const btn = document.getElementById('plan-submit-btn');
+      errorEl.style.display = 'none';
+
+      if (!SVValidate.emailFormatValid(email)) {
+        errorEl.textContent = 'Please enter a valid email address.';
+        errorEl.style.display = 'block';
+        return false;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Checking email...';
+
+      SVValidate.checkEmailDomain(email).then(function (result) {
+        btn.disabled = false;
+        btn.textContent = 'Request this plan';
+
+        if (result === 'invalid') {
+          errorEl.textContent = "This email's domain doesn't appear to accept email — please check for typos.";
+          errorEl.style.display = 'block';
+          return;
+        }
+
+        SVData.addOrder({
+          name: document.getElementById('p-name').value.trim(),
+          email: email,
+          plan: selectedPlan.plan,
+          price: selectedPlan.price
+        });
+        document.getElementById('plan-success').style.display = 'block';
+        document.getElementById('pay-now-btn').style.display = 'flex';
+      });
+
+      return false;
+    }
+
+    function showPaymentPlaceholder() {
+      document.getElementById('payment-modal').classList.add('open');
+    }
+
+    function closePaymentModal() {
+      document.getElementById('payment-modal').classList.remove('open');
+    }
+  </script>
+
+</body>
+
+</html>
